@@ -1,0 +1,2 @@
+/db/*			    200!	Role=admin
+/db/*	/login	401!
