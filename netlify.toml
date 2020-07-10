@@ -6,7 +6,13 @@ command = "./stackbit-build.sh"
   HUGO_VERSION = "0.47"
 
 [[redirects]]
-  from = "/db/*"
+  from = "/*"
+  to = "/db"
   status = 200
-  force = true
-  Role = ["admin"]
+  force = false
+  conditions = {Role = ["admin"]}
+      
+[[redirects]]
+  from = "/*"
+  to = "/login"
+  status = 302
